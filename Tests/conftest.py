@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 @pytest.fixture
-def driver():
+def setup_driver():
     # Открываем браузер
     driver = webdriver.Chrome()
     driver.get("https://stellarburgers.nomoreparties.site/")
